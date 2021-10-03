@@ -1,0 +1,48 @@
+version: '3'
+services:
+
+  serve-site:
+    build:
+      context: .
+      args:
+        - HUGO_VERSION=0.83.1
+    image: sre-hugo-universal:latest
+    command: 'server -D --watch --bind 0.0.0.0 -d docs-local/'
+    volumes:
+      - .:/src
+    ports:
+      - '1313:1313'
+
+  build-prod:
+    build:
+      context: .
+      args:
+        - HUGO_VERSION=0.83.1
+    image: sre-hugo-universal:latest
+    command: '--minify'
+    volumes:
+      - .:/src
+
+  build-sre:
+    build:
+      context: .
+      args:
+        - HUGO_VERSION=0.83.1
+    image: sre-hugo-universal:latest
+    command: '--minify --config config.toml'
+    volumes:
+      - .:/src
+
+  hugo:
+    build:
+      context: .
+      args:
+        - HUGO_VERSION=0.83.1
+    image: sre-hugo-universal:latest
+    volumes:
+      - .:/src
+
+  utility:
+    image: alpine:latest
+    volumes:
+      - .:/src
