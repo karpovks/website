@@ -24,7 +24,7 @@ HUGO_NEW_MODULE = new --kind topic content/$(NEW_MODULE_ARGS)
 # Generic
 #-------------------------------------------------------------------------------
 help:                  ## Show this help
-	@echo "\nIf you have docker installed, use the following targets (make docker-serve is probably what you want for local development): \n"
+	@echo "\nIf you have docker installed, use the following targets (make serve is probably what you want for local development): \n"
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 	@echo "\n"
 	@echo "Don't forget to checkout contributions.md for more info on how to contribute to this repo."
