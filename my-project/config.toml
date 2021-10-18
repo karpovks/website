@@ -10,6 +10,8 @@ disqusShortname = ""
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+publishdir    = "docs"
+
 ############################# Plugins ##############################
 [params.plugins]
 
