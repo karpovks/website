@@ -53,7 +53,7 @@ _new-module:           ## (via hugo) Create new module
 build-github-pages:            ## (via docker) Build hugo site (prod) - used by the CI/CD tool
 	docker-compose run --rm build-prod
 
-build-personaal:            ## (via docker) Build hugo site (prod) - used to output docs that work in discover github pages
+build-personal:            ## (via docker) Build hugo site (prod) - used to output docs that work in discover github pages
 	 rm -rf docs && docker-compose run --rm build-personal
 
 serve:                 ## (via docker) Run hugo server locally

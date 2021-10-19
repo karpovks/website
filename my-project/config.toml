@@ -6,11 +6,11 @@ theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
 disqusShortname = ""
-
+publishdir="docs"
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-publishdir="docs"
+
 
 ############################# Plugins ##############################
 [params.plugins]
