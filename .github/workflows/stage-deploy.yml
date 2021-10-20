@@ -15,7 +15,7 @@ jobs:
 
       - name: Production build
         run:  |
-          make build-github-pages
+          gmake build-github-pages
           ls -la ./docs/* && git status
 
       - name: Commit build to prod branch
