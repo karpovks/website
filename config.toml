@@ -86,7 +86,7 @@ home = "Home"
 description = "This is meta description"
 author = "Kurt Karpov"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-44065585-1"
 # Contact Information
 mobile = "+1 (248) 425-4058"
 email = "kurt.s.karpov@gmail.com"
